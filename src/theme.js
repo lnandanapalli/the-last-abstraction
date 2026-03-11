@@ -24,32 +24,26 @@ const theme = createTheme({
     divider: 'rgba(34, 211, 238, 0.15)',
   },
   typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontFamily: '"Playfair Display", serif',
       fontWeight: 900,
       letterSpacing: '-0.02em',
     },
     h2: {
-      fontFamily: '"Playfair Display", serif',
       fontWeight: 700,
     },
     h3: {
-      fontFamily: '"Playfair Display", serif',
       fontWeight: 700,
     },
     h4: {
-      fontFamily: '"Playfair Display", serif',
       fontWeight: 600,
     },
     h5: {
-      fontFamily: '"Playfair Display", serif',
       fontWeight: 600,
     },
     h6: {
-      fontFamily: '"Playfair Display", serif',
       fontWeight: 600,
-      letterSpacing: '2px', // Useful for small uppercase headings
+      letterSpacing: '0.05em', // Useful for small uppercase headings
     },
     body1: {
       fontSize: '1rem',

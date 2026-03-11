@@ -6,8 +6,6 @@ import bookPdf from '../assets/Book.pdf';
 
 const navItems = [
   { label: 'About', href: '#about' },
-  { label: 'The Stack', href: '#layers' },
-  { label: 'Excerpts', href: '#excerpts' },
   { label: 'Author', href: '#author' },
 ];
 
@@ -57,7 +55,6 @@ export default function Navbar() {
               component="a"
               href="#"
               sx={{
-                fontFamily: '"Playfair Display", serif',
                 fontWeight: 700,
                 color: 'secondary.main',
                 textDecoration: 'none',

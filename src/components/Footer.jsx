@@ -29,7 +29,7 @@ export default function Footer() {
           textAlign={{ xs: 'center', md: 'left' }}
         >
           <Box>
-            <Typography variant="h6" sx={{ fontFamily: '"Playfair Display", serif', color: 'secondary.main', mb: 0.5 }}>
+            <Typography variant="h6" sx={{ color: 'secondary.main', mb: 0.5 }}>
               The Last Abstraction
             </Typography>
             <Typography variant="body2" color="text.secondary">
@@ -38,8 +38,6 @@ export default function Footer() {
           </Box>
           <Stack direction="row" spacing={3}>
             <Link href="#about" onClick={(e) => handleNavClick(e, '#about')} color="text.secondary" underline="hover">About</Link>
-            <Link href="#layers" onClick={(e) => handleNavClick(e, '#layers')} color="text.secondary" underline="hover">The Stack</Link>
-            <Link href="#excerpts" onClick={(e) => handleNavClick(e, '#excerpts')} color="text.secondary" underline="hover">Excerpts</Link>
             <Link href="#author" onClick={(e) => handleNavClick(e, '#author')} color="text.secondary" underline="hover">Author</Link>
           </Stack>
         </Stack>
