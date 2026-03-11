@@ -1,6 +1,19 @@
 import { Box, Container, Typography, Link, Stack } from '@mui/material';
+import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
+  const location = useLocation();
+
+  const handleNavClick = (e, href) => {
+    if (location.pathname === '/' && href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+
   return (
     <Box component="footer" sx={{ 
       py: 6, 
@@ -24,10 +37,10 @@ export default function Footer() {
             </Typography>
           </Box>
           <Stack direction="row" spacing={3}>
-            <Link href="#about" color="text.secondary" underline="hover">About</Link>
-            <Link href="#layers" color="text.secondary" underline="hover">The Stack</Link>
-            <Link href="#excerpts" color="text.secondary" underline="hover">Excerpts</Link>
-            <Link href="#author" color="text.secondary" underline="hover">Author</Link>
+            <Link href="#about" onClick={(e) => handleNavClick(e, '#about')} color="text.secondary" underline="hover">About</Link>
+            <Link href="#layers" onClick={(e) => handleNavClick(e, '#layers')} color="text.secondary" underline="hover">The Stack</Link>
+            <Link href="#excerpts" onClick={(e) => handleNavClick(e, '#excerpts')} color="text.secondary" underline="hover">Excerpts</Link>
+            <Link href="#author" onClick={(e) => handleNavClick(e, '#author')} color="text.secondary" underline="hover">Author</Link>
           </Stack>
         </Stack>
       </Container>

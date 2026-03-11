@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Button, IconButton, Box, Container, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useLocation } from 'react-router-dom';
+import bookPdf from '../assets/Book.pdf';
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -92,7 +93,7 @@ export default function Navbar() {
               <Button 
                 variant="contained" 
                 color="primary"
-                href="Book.pdf"
+                href={bookPdf}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -149,7 +150,7 @@ export default function Navbar() {
                 fullWidth 
                 variant="contained" 
                 color="primary"
-                href="Book.pdf"
+                href={bookPdf}
                 target="_blank"
                 rel="noopener noreferrer"
                 size="large"

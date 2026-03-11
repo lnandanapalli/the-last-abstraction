@@ -5,6 +5,8 @@ import LayersIcon from '@mui/icons-material/Layers';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import MemoryIcon from '@mui/icons-material/Memory';
 import { motion } from 'framer-motion';
+import coverImg from '../assets/Cover.png';
+import bookPdf from '../assets/Book.pdf';
 
 const layers = [
   { level: '09', name: 'Agents', desc: 'Autonomous AI systems that perceive, reason, and act — the final abstraction that closes the loop.', color: '#a78bfa' },
@@ -84,7 +86,7 @@ export default function Home() {
                     color="primary" 
                     size="large"
                     startIcon={<DownloadIcon />}
-                    href="Book.pdf"
+                    href={bookPdf}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -116,7 +118,7 @@ export default function Home() {
                     transition: 'transform 0.5s ease',
                   }
                 }}>
-                  <Box component="img" src="/Cover.png" alt="Book Cover" sx={{
+                  <Box component="img" src={coverImg} alt="Book Cover" sx={{
                     width: { xs: 260, sm: 320, md: 400 },
                     borderRadius: 2,
                     boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5), 0 0 80px rgba(34, 211, 238, 0.08)',
@@ -245,8 +247,8 @@ export default function Home() {
                   <Typography variant="overline" sx={{ color: 'secondary.main', fontWeight: 600, letterSpacing: 2 }}>From the Preface</Typography>
                   <Typography variant="body1" sx={{ mt: 2, color: 'text.secondary', fontSize: '1.05rem', fontStyle: 'italic', position: 'relative' }}>
                     <FormatQuoteIcon sx={{ position: 'absolute', top: -10, left: -15, color: 'rgba(34, 211, 238, 0.1)', fontSize: 60, zIndex: -1 }} />
-                    "For three and a half centuries, humans built intelligence by abstracting away from physics. Every generation added a new layer of abstraction on top of the last, each layer hiding the one below it, each one moving further from the raw behavior of electrons and closer to something that looked like thought...<br/><br/>
-                    AI does not have those limits. An AI does not need a programming language to express computation. It can configure logic directly... The layers were never fundamental properties of computation. They were accommodations for human minds."
+                    &quot;For three and a half centuries, humans built intelligence by abstracting away from physics. Every generation added a new layer of abstraction on top of the last, each layer hiding the one below it, each one moving further from the raw behavior of electrons and closer to something that looked like thought...<br/><br/>
+                    AI does not have those limits. An AI does not need a programming language to express computation. It can configure logic directly... The layers were never fundamental properties of computation. They were accommodations for human minds.&quot;
                   </Typography>
                 </CardContent>
               </Card>
@@ -257,7 +259,7 @@ export default function Home() {
                   <CardContent sx={{ p: 4 }}>
                     <Typography variant="overline" sx={{ color: 'secondary.main', fontWeight: 600, letterSpacing: 2 }}>Chapter 2: Electricity Learns to Count</Typography>
                     <Typography variant="body2" sx={{ mt: 2, color: 'text.secondary' }}>
-                      "This was the first moment in the history of computation where the physical layer essentially disappeared. When you reason in Boolean algebra, you are not thinking about electrons. You are thinking about TRUE and FALSE. The electrons are below the level of concern, they have been abstracted away."
+                      &quot;This was the first moment in the history of computation where the physical layer essentially disappeared. When you reason in Boolean algebra, you are not thinking about electrons. You are thinking about TRUE and FALSE. The electrons are below the level of concern, they have been abstracted away.&quot;
                     </Typography>
                   </CardContent>
                 </Card>
@@ -265,7 +267,7 @@ export default function Home() {
                   <CardContent sx={{ p: 4 }}>
                     <Typography variant="overline" sx={{ color: 'secondary.main', fontWeight: 600, letterSpacing: 2 }}>Chapter 15: The Last Abstraction</Typography>
                     <Typography variant="body2" sx={{ mt: 2, color: 'text.secondary' }}>
-                      "The last abstraction, intelligence, arrived at the top of the stack. And unlike every abstraction before it, it is not a tool for humans. It is the thing itself. An intelligence running on the stack does not need the stack in the way that a human programmer needs it."
+                      &quot;The last abstraction, intelligence, arrived at the top of the stack. And unlike every abstraction before it, it is not a tool for humans. It is the thing itself. An intelligence running on the stack does not need the stack in the way that a human programmer needs it.&quot;
                     </Typography>
                   </CardContent>
                 </Card>
@@ -288,7 +290,7 @@ export default function Home() {
               }}>
                 <FormatQuoteIcon sx={{ color: 'primary.dark', fontSize: 40, mb: 1 }} />
                 <Typography variant="h5" sx={{ fontStyle: 'italic', fontFamily: '"Playfair Display", serif', color: 'text.primary', lineHeight: 1.5 }}>
-                  "We built layer upon layer of abstraction to escape the complexity of physics. Then we built a system that learned to bypass them all."
+                  &quot;We built layer upon layer of abstraction to escape the complexity of physics. Then we built a system that learned to bypass them all.&quot;
                 </Typography>
               </Box>
             </Grid>
@@ -328,7 +330,7 @@ export default function Home() {
               size="large" 
               sx={{ py: 1.5, px: 4, fontSize: '1.1rem', borderRadius: 10 }}
               startIcon={<DownloadIcon />}
-              href="Book.pdf"
+              href={bookPdf}
               target="_blank"
               rel="noopener noreferrer"
             >
